@@ -1,10 +1,9 @@
 <?php
 
-include 'account_routes.php';
-
+//include 'account_routes.php';
 include 'dev_routes.php';
 include 'live_custom_routes.php';
-include 'new_routes.php';
+//include 'new_routes.php';
 
 /*
 |--------------------------------------------------------------------------
@@ -13,8 +12,8 @@ include 'new_routes.php';
  */
 
 //Route::model('article', 'App\Models\Article');
-// Route::model('product', 'App\Models\product');
-// Route::pattern('slug', '[a-z0-9- _]+');
+//Route::model('product', 'App\Models\product');
+//Route::pattern('slug', '[a-z0-9- _]+');
 
 /*
 |--------------------------------------------------------------------------
@@ -116,10 +115,7 @@ Route::group(['prefix' => LaravelLocalization::getCurrentLocale()], function ()
         'middleware' => ['before', 'sentinel.auth', 'sentinel.permission']
     ], function ()
     {
-        // Route::get('products', ['as' => 'admin.products.index', 'uses' => 'ProductController@index']);
-        // Route::get('products/new', ['as' => 'admin.products.new', 'uses' => 'ProductController@newProduct']);
-        // Route::get('products/destroy/{id}', ['as' => 'admin.products.destroy', 'uses' => 'ProductController@destroy']);
-        // Route::post('products/save', ['as' => 'admin.products.save', 'uses' => 'ProductController@add']);
+       
     });
 
     Route::group([
