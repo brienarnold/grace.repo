@@ -18,15 +18,7 @@ class ShopController extends Controller
      */
     public function index()
     {
-        $products = Product::all();
-        $categories = Category::all();
-        // echo "<pre>";
-        // var_dump($products);
-        // echo "</pre>";
-        //die();
-         //dd($products);
-         return view('frontend.shop.index',['products' => $products]);
-        //return view('frontend.shop.index', compact('products', $products));
+      
     }
 
     /**
@@ -42,7 +34,7 @@ class ShopController extends Controller
 
 
 
-        return view('frontend.shop.product', ['product' => Product::findBySlug($slug)]);
+        //return view('frontend.shop.product', ['product' => Product::findBySlug($slug)]);
 
     }
 }
